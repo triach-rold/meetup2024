@@ -255,6 +255,15 @@ section {
             z-index: 100;
 }
     </style>
+    <script>
+         for (let i = 1; i <= 67; i++) {
+            const link = document.createElement('link');
+            link.rel = 'preload';
+            link.as = 'image';
+            link.href = `resources/MMKCMeetup-${i.toString().padStart(2, '0')}.jpg`;
+            document.head.appendChild(link);
+        }
+    </script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
